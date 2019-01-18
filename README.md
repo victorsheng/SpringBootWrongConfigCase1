@@ -10,6 +10,8 @@ https://github.com/spring-projects/spring-boot/issues/3850
 参考:
 https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/annotation/ComponentScan.html
 
+默认是实例化当前包的spring bean，如果你的包放在了根目录，那么就是全部实例化了，但是springboot的auto-configration又会存在很多不存在的，so启动报错
+
 # 问题
 ## 正常
 将application移动到根目录后启动报错如下
